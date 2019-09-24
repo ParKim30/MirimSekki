@@ -1,0 +1,20 @@
+#wrap{width: 100%;}
+#contents{height:800px;background:#f8ecc9;}
+#footer{height:100px;background:#f8ecc9;}
+
+/*헤더*/
+#header{height:300px;background:#f8ecc9;position: relative;}
+#header img{width:300px;height:200px;position: absolute;left:600px;top:100px;}
+
+/*회원가입 */
+.signup{margin:0 auto;width:800px; height:500px;}
+#login_form{height:400px; text-align: center; width: 800px; border-collapse: collapse; border-left:none;border-right:none; border-top:2px solid #2c3b00; border-bottom:2px solid #2c3b00;}
+.signup .input_text{width:500px;height:40px;border:1px solid #2c3b00; padding-left:10px;}
+.signup .input_num{width:50px; height:30px; padding-left:20px;}
+.signup td{padding:0 5px 0 5px;}
+.signup .radio{margin-left:5px; margin-right:5px;}
+td{font-weight: bold;}
+.td_text{background:#7b816a;}
+.select{width:80px;padding-left:30px;height: 20px;}
+
+.signup_btn{ width:200px; height:40px; background:#2c3b00; color:white; font-size: 20px; border:none;margin-left:300px; margin-top:30px;}
