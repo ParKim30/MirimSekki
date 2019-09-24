@@ -1,0 +1,29 @@
+#wrap{width: 100%;}
+#contents{height:800px;background:#f8ecc9;}
+#footer{height:100px;background:#f8ecc9;}
+
+/*헤더*/
+#header{height:300px;background:#f8ecc9;position: relative;}
+#header img{width:300px;height:200px;position: absolute;left:600px;top:100px;}
+#header span{position: absolute;left:490px;top:270px; font-size:18px;text-align:center;}
+#header strong{color:#2c3b00;}
+
+/*로그인 컨텐츠*/
+.login_content{text-align:center;padding-top:50px;}
+.login_content .lc_text{}
+.login_content .lc_text .input_text{width:590px;height:50px;margin-bottom:10px; font-size:20px; padding-left:10px;}
+.login_content .lc_btn{width:602px; height: 50px;background:#2c3b00; color:white; font-size:20px;border:0;}
+
+/*로그인 보안*/
+.login_security{text-align: center;position: relative;height:100px;}
+.login_security .lh_check{position: absolute; left:470px;top:10px;}
+.login_security .lh_check .input_check{}
+.login_security .lh_ip{position: absolute; left:980px;top:10px;}
+.login_security .lh_ip em{padding-left:5px;font-style: normal; text-decoration: underline;color:green;}
+
+/*로그인 푸터*/
+.login_footer{margin-left:630px;}
+.login_footer ul{overflow:hidden; }
+.login_footer li{float:left;padding-right:40px; color:#333;}
+
+
