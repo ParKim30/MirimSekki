@@ -12,7 +12,7 @@
 
 /*미림세끼 로고*/
 .header .header-logo{text-align: left;padding-top:20px; padding-left:50px;float:left;}
-.header .header-logo a{ background:url("../image/logo.png"); display:inline;}
+.header .header-logo a{display:inline;}
 .header .header-logo img{width:200px; height:120px;}
 
 /*헤더 메뉴*/
