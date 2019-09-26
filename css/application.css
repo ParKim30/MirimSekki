@@ -1,0 +1,36 @@
+/*레이아웃*/
+#wrap{}
+#header{height:150px;background: #f8ecc9;box-shadow:0 5px 10px #ccc;}
+#contents{background: white;}
+#footer{width:100%;height:120px;background: white;}
+
+/*미림세끼 로고*/
+.header-logo{text-align: left;padding-top:20px; padding-left:50px;float:left;}
+.header-logo a{ background:url("../image/logo.png"); display:inline;}
+.header-logo img{width:200px; height:120px;}
+
+/*헤더 메뉴*/
+.header-menu ul{float:left;text-align: center;margin-top:68px;margin-left:200px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:30px;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 20pt;text-decoration: none;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 20pt;text-decoration:none;}
+
+/*이름*/
+.name_wrap{text-align: center;}
+.name_wrap .name{padding-top:50px;padding-bottom:30px;}
+.name_wrap .name p{font-size: 22pt;}
+
+/*체크박스*/
+.checkbox{padding:10px;}
+#meal1{width:30px;height: 30px;margin:5px;padding:5px;}
+#meal2{width:30px;height: 30px;margin:5px;padding:5px}
+#meal3{width:30px;height: 30px;margin:5px;padding:5px;}
+.checkbox label{font-size: 18pt;position: relative;top:-8px;}
+.checkbox span{margin:20px;}
+
+/*공지사항*/
+.notice{padding:10px;}
+.notice ol{list-style-type:decimal;}
+
+/*신청하기 버튼*/
+#submit_btn{width: 100px;height: 40px;margin:20px;border-radius:20px;background:#2c3b00;color:white;font-size: 18px;}
