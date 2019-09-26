@@ -1,0 +1,29 @@
+/*레이아웃*/
+#wrap{}
+#header{height:150px;background: #f8ecc9;box-shadow:0 5px 10px #ccc;}
+#contents{background: white;}
+#footer{width:100%;height:120px;background: #f8ecc9;}
+
+/*미림세끼 로고*/
+.header-logo{text-align: left;padding-top:20px; padding-left:50px;float:left;}
+.header-logo a{ background:url("../image/logo.png"); display:inline;}
+.header-logo img{width:200px; height:120px;}
+
+/*헤더 메뉴*/
+.header-menu ul{float:left;text-align: center;margin-top:68px;margin-left:200px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:30px;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 20pt;text-decoration: none;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 20pt;text-decoration:none;}
+
+/* 만족도조사 백그라운드*/
+.survey {background:whitesmoke; border-radius: 50px; width:800px; margin:0 auto; box-shadow: 1px 1px 4px 1px rgb(167, 167, 167);margin-top:50px;margin-bottom: 50px;}
+
+/*만족도조사*/
+.title{margin-left:30px;padding-top:20px;}
+.Question{padding:10px; font-size: 20px;margin-left:20px;}
+.Question li{padding:10px;}
+.Q_wrap input{padding:5px;margin:5px;}
+
+/*만족도조사 버튼*/
+.btn_wrap{text-align: right;}
+.btn{width: 80px;height: 50px;border-radius: 50px;margin-right:15px;}
