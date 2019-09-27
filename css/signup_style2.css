@@ -20,7 +20,11 @@
 .select{width:80px;padding-left:30px;height: 20px;border:1px solid #2c3b00;border-radius: 5px;}
 .signup .radio{margin-left:5px; margin-right:5px;}
 .signup td{padding:0 5px 0 5px;font-weight: bold;}
-
-
+.signup tr{margin-bottom:20px;}
+.signup .td_text{width: 120px; font-size:16px; font-weight: bold;}
+/*알레르기*/
+.signup td ul{overflow: hidden;}
+.signup td li{float:left; margin-left:10px; margin-right: 10px; font-size: 16px;}
+.signup .allergy_box{margin-right:5px;}
 
 .signup_btn{ width:200px; height:50px; background:#2c3b00; color:white; font-size: 20px; border:none; margin-top:30px;}
