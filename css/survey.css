@@ -1,7 +1,7 @@
 /*레이아웃*/
 #wrap{}
-#header{height:150px;background: #f8ecc9;box-shadow:0 5px 10px #ccc;}
-#contents{background: white;}
+#header{height:250px;background: #f8ecc9;box-shadow:0 5px 10px #ccc;}
+#contents{background:#f8ecc9;position: relative; height:1000px;}
 #footer{width:100%;height:120px;background: #f8ecc9;}
 
 /*미림세끼 로고*/
@@ -9,17 +9,24 @@
 .header-logo a{ background:url("../image/logo.png"); display:inline;}
 .header-logo img{width:200px; height:120px;}
 
+/*백그라운드*/
+#header{position: relative;}
+.header-logo img{width:300px;height:200px;left:600px;top:56px;position: absolute; z-index: 2;}
+.header-img img{position:relative; width:100%;height:400px; z-index: 1; opacity: 0.2;}
+
 /*헤더 메뉴*/
-.header-menu ul{float:left;text-align: center;margin-top:68px;margin-left:200px;}
-.header-menu ul li{list-style-type:none;display:inline;margin-left:30px;}
-.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 20pt;text-decoration: none;}
-.header-menu ul a:hover{color:#2c3b00;font-size: 20pt;text-decoration:none;}
+.header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
+.header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
+.header-menu hr{width:1000px; height:3px; background:#2c3b00; }
 
 /* 만족도조사 백그라운드*/
-.survey {background:whitesmoke; border-radius: 50px; width:800px; margin:0 auto; box-shadow: 1px 1px 4px 1px rgb(167, 167, 167);margin-top:50px;margin-bottom: 50px;}
+.survey {text-align: center; width:1000px;height: 850px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
 
 /*만족도조사*/
-.title{margin-left:30px;padding-top:20px;}
+.title{margin-left:30px;padding-top:40px;}
 .Question{padding:10px; font-size: 20px;margin-left:20px;}
 .Question li{padding:10px;}
 .Q_wrap input{padding:5px;margin:5px;}
@@ -27,3 +34,8 @@
 /*만족도조사 버튼*/
 .btn_wrap{text-align: right;}
 .btn{width: 80px;height: 50px;border-radius: 50px;margin-right:15px;}
+
+
+/*footer*/
+#footer .address_wrap{margin:auto;position: relative;width:500px;border:1px solid #ccc;}
+#footer address div{position: absolute;top:50px;left:100px;}
