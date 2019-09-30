@@ -1,7 +1,8 @@
 /*레이아웃*/
-#wrap{}
-#header{height:150px;background: #f8ecc9;box-shadow:0 5px 10px #ccc;}
-#contents{margin-top:30px;}
+html{height:100%;}
+#wrap{background:#f8ecc9; height:100%;}
+#header{height:250px;background: #f8ecc9;}
+#contents{background-color:#f8ecc9; position: relative;height:1500px;}
 #footer{width:100%;height:120px;}
 
 
@@ -15,15 +16,25 @@
 .header .header-logo a{display:inline;}
 .header .header-logo img{width:200px; height:120px;}
 
+/*백그라운드*/
+#header{position: relative;}
+.header-logo img{width:300px;height:200px;left:600px;top:56px;position: absolute; z-index: 2;}
+.header-img img{position:relative; width:100%;height:400px; z-index: 1; opacity: 0.2;}
+
+
 /*헤더 메뉴*/
-.header .header-menu ul{float:left;text-align: center;margin-top:68px;margin-left:200px;}
-.header .header-menu ul li{list-style-type:none;display:inline;margin-left:30px;}
-.header .header-menu ul a{display:inline-block;color:#2c3b00;font-size: 20pt;text-decoration: none;}
-.header .header-menu ul a:hover{color:#2c3b00;font-size: 20pt;text-decoration:none;}
+.header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
+.header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
+.header-menu hr{width:1000px; height:3px; background:#2c3b00; }
+
+.con_con{text-align: center; width:1000px;height: 1400px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
 
 
 /*날짜*/
-.date {text-align: center;margin:10px;}
+.date {text-align: center;margin:10px; margin-top:30px;}
 .date img{width: 30px;height: 30px;}
 .date .today_date{font-size: 30px;}
 .date .left_tri{margin-right:10px;}
@@ -43,12 +54,12 @@
 .ggi_txt{border-bottom:5px solid #2c3b00;padding:5px;margin:auto;width:200px;background:#f8ecc9;}
 
 /*댓글박스*/
-#cont_cbox .container{width:1200px;margin:auto;}
-.cbox_head .cbox_head_inner{text-align:center;width:150px;margin:25px 0 20px 100px;}
-.cbox_head .cbox_head_inner span{width:200px;font-size: 20px; }
+#cont_cbox .container{width:1000px;margin:auto;}
+.cbox_head .cbox_head_inner{text-align:center;width:300px;margin:25px 0 20px 10px;}
+.cbox_head .cbox_head_inner span{width:300px;font-size: 20px; }
 
-#cbox_form{padding:15px;background: #fff;width:1000px;margin:auto;border:1px solid #ccc;}
-.cbox_write_wrap .cbox_write_inner{width: 1000px;}
+#cbox_form{padding:15px;background: #fff;width:900px;margin:auto;border:1px solid #ccc;}
+.cbox_write_wrap .cbox_write_inner{width: 900px;}
 
 .cbox_profile_area{overflow:hidden;font-size: 12px;height:30px;padding-left:5px;width:1000px;}
 .cbox_profile_area .cbox_name{float:left;padding-right: 15px;margin:5px;}
@@ -75,7 +86,7 @@
 
 /*여기까지 댓글 입력 부분*/
 
-.cbox_content_wrap{margin:auto;width:1000px;border:1px solid #ccc;padding:10px;margin-top:20px;margin-bottom: 20px;}
+.cbox_content_wrap{margin:auto;width:900px;border:1px solid #ccc;padding:10px;margin-top:20px;margin-bottom: 20px;}
 .cbox_list{}
 .cbox_list ul{}
 .cbox_list ul li{}
@@ -83,7 +94,7 @@
 .cbox_list .list_contents{margin:10px;}
 .cbox_list .list_date{margin:10px;padding-bottom:5px;border-bottom: 1px solid #ccc;}
 
-.cbox_more_view{overflow:hidden;width: 1000px;margin:auto;}
+.cbox_more_view{overflow:hidden;width: 900px;margin:auto;}
 .cbox_more_view .more_view{float:right;color:black;text-decoration: none;margin:10px;}
 
 
@@ -91,9 +102,4 @@
 #footer{background:#f8ecc9;}
 #footer .address_wrap{margin:auto;position: relative;width:500px;border:1px solid #ccc;}
 #footer address div{position: absolute;top:50px;left:100px;}
-
-
-
-
-
 
