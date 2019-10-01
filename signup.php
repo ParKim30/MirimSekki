@@ -1,8 +1,8 @@
 <?php
-    $host = "127.0.0.1";
-    $user = "root";
-    $pw = "mirim2";
-    $dbName = "mirimsekki";
+    $host = "3meals.emirim.kr";
+    $user = "mirimmeals";
+    $pw = "parkim30!";
+    $dbName = "mirimmeals";
     $conn = new mysqli($host,$user,$pw,$dbName);
 
 
@@ -19,6 +19,7 @@
     //     echo $allergy[$i] . "<br>";
     //   }
    
+
     if(count($allergy)==0){
         $exist = false;
     }else if(count($allergy)>0){
