@@ -1,0 +1,30 @@
+#wrap{width: 100%;}
+#contents{height:800px;background:#f8ecc9;}
+#footer{height:100px;background:#f8ecc9;}
+
+/*헤더*/
+#header{height:250px;background:#f8ecc9;position: relative;}
+#header img{width:300px;height:200px;position: absolute;left:600px;top:50px;}
+
+/*회원가입 헤더*/
+.signup_header{text-align: center; padding-top:40px; padding-bottom: 20px;}
+.signup_header h1{}
+.signup_header hr{width:200px; height:5px; background:#2c3b00; border:0;margin-bottom:20px;}
+
+/*회원가입 */
+.signup{margin:0 auto;width:800px; height:700px;background:whitesmoke; border-radius: 50px;box-shadow: 1px 1px 4px 1px rgb(167, 167, 167);position: relative;}
+#signup_table{height:400px; text-align: center; width: 700px; border-collapse: collapse; border-left:none;border-right:none;}
+#signup_form{text-align: center; width:700px; margin:0 auto;}
+.signup .input_text{width:500px;height:40px;border:1px solid black;margin-left:10px;}
+.signup .input_num{width:80px; height:30px; margin-left:10px;border:1px solid #2c3b00;}
+.select{width:80px;margin-left:10px;height: 20px;border:1px solid #2c3b00;}
+.signup .radio{margin-left:10px; margin-right:5px;border:1px solid black;width:80px; height:30px;}
+.signup td{padding:0 5px 0 5px;font-weight: bold;}
+.signup tr{margin-bottom:20px;}
+.signup .td_text{width: 120px; font-size:16px; font-weight: bold;}
+/*알레르기*/
+.signup td ul{overflow: hidden;}
+.signup td li{float:left; margin-left:10px; margin-right: 10px; font-size: 16px;}
+.signup .allergy_box{margin-right:5px;}
+
+.signup_btn{ width:200px; height:50px; background:#2c3b00; color:white; font-size: 20px; border:none; margin-top:30px;}
