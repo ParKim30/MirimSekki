@@ -14,7 +14,7 @@
         <meta name="keywords" content="미림,미림세끼, 급식">
         <meta name="generator" content="vscode">
         <title>미림세끼 회원가입</title>
-        <link rel="stylesheet" href="css/php_signup_style.css">
+        <link rel="stylesheet" href="css/php_my_info.css">
         <link rel="stylesheet" href="css/reset.css">
         <meta charset="UTF-8">
         <script src="js/signup.js"></script>
