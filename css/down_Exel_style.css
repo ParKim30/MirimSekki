@@ -1,0 +1,48 @@
+/*레이아웃*/
+#wrap{background: #f8ecc9;}
+#header{height:250px;background: #f8ecc9;}
+#contents{background: #f8ecc9;position: relative; height:1000px;}
+#footer{width:100%;height:120px;background: #f8ecc9;}
+
+/*미림세끼 로고*/
+.header-logo{text-align: left;padding-top:20px; padding-left:50px;float:left;}
+.header-logo a{ background:url("../image/logo.png"); display:inline;}
+.header-logo img{width:200px; height:120px;}
+
+/*백그라운드*/
+#header{position: relative;}
+.header-logo img{width:300px;height:200px;left:600px;top:56px;position: absolute; z-index: 2;}
+.header-img img{position:relative; width:100%;height:400px; z-index: 1; opacity: 0.2;}
+
+
+/*헤더 메뉴*/
+.header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
+.header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
+.header-menu hr{width:1000px; height:3px; background:#2c3b00; }
+
+/*다운로드 헤더*/
+.download{text-align: center; width:1000px;height: 600px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
+.download h1{ font-weight:bolder;font-size:33px; color:#2c3b00; }
+.download .download_header{margin-top:60px;}
+.download_header span{ font-weight: bold; font-size: 18px;}
+
+/*다운로드 컨테이너*/
+.download .download_con{width:1000px; height: 400px;  margin-top:30px;}
+.download_con .download_menu{position: relative;width:1000px; height:100px;}
+.download_menu .application_con{float:left;position: absolute; left:330px; top:20px; width:140px;}
+.download_menu .survey_con{position: absolute; left:510px; top:20px;width:140px; }
+.download_con .download_btn{display:block; margin:0 auto;width:500px; height:50px; background:#2c3b00;color:white; border:0; margin-bottom:10px; border-radius: 10px; font-weight: bold;} 
+.download_con .download_btn:hover{background:#151b00;}
+.download_menu .con_title{font-weight: bold; font-size:18px;padding:10px; color:black;width:140px;}
+.title_con .con_line{width:140px;height:2px;border-top:1.5px solid black;position: absolute; top:20;margin-left: 8px;}
+.title_con:hover>.con_line{border-top:4px solid black;}
+
+/* .download_con .application_con{ float:left;width:200px; position: absolute;left:250px; top:20px; display:block;background:white;}
+.download_con .survey_con{float:left; width:200px; position: absolute; left:550px;top:20px;display:block;background:white;}
+.download_con .con_title{font-weight: bold; font-size:18px;padding:10px; background:#2c3b00; margin-bottom:10px; color:white;}
+
+
+.download_con .download_btn{display:block; margin:0 auto;width:100px; height:50px; background:#536e00;color:white; border:0; margin-bottom:10px; border-radius: 10px; font-weight: bold;} */
