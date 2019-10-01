@@ -23,6 +23,18 @@ html{height:100%;}
 
 
 /*헤더 메뉴*/
+
+.header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
+.header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px;font-family: 'Do Hyeon', sans-serif; border-top:1px }
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
+.header-menu hr{width:1000px; height:3px; background:#2c3b00; }
+li #menu{color:rgb(101, 126, 104);}
+
+
+.con_con{text-align: center; width:1000px;height: 1400px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
+/*
 .header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
 .header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
 .header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
@@ -31,10 +43,10 @@ html{height:100%;}
 .header-menu hr{width:1000px; height:3px; background:#2c3b00; }
 
 .con_con{text-align: center; width:1000px;height: 1400px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
-
+*/
 
 /*날짜*/
-.date {text-align: center;margin:10px; margin-top:30px;}
+.date {text-align: center;margin:30px; margin-top:40px;}
 .date img{width: 30px;height: 30px;}
 .date .today_date{font-size: 30px;}
 .date .left_tri{margin-right:10px;}
@@ -42,16 +54,16 @@ html{height:100%;}
 .date .calendar_img{margin-left:10px;}
 
 /*탭 메뉴*/
-.tab_menu{text-align: center;width:90%;height:400px;margin:auto;position: relative;padding:10px;border: 1px solid #2c3b00;border-radius: 15px;}
-.tab_menu ul{list-style-type: none;height:100%;margin-top:5px;}
+.tab_menu{text-align: center;width:90%;height:400px;margin:auto;position: relative;padding:10px;border-radius: 15px;}
+.tab_menu ul{list-style-type: none;height:100%;margin-top:35px;}
 .tab_menu ul li{padding:10px;}
 .tab_menu ul li span{font-weight: normal;}
-.tab_menu .hanggi{background: white;float:left;width: 30%;margin:10px 10px 10px 30px;border-radius: 15px;}
-.tab_menu .duggi{background: white;float:left;width: 30%;margin: 10px;border-radius: 15px;}
-.tab_menu .seggi{background: white;float:left;width: 30%;margin: 10px;border-radius: 15px;}
+.tab_menu .hanggi{background: white;float:left;width: 30%;margin:10px 10px 10px 30px;border-radius: 15px; position: relative;}
+.tab_menu .duggi{background: white;float:left;width: 30%;margin: 10px;border-radius: 15px; position: relative;}
+.tab_menu .seggi{background: white;float:left;width: 30%;margin: 10px;border-radius: 15px; position: relative;}
 .tab_menu .menu{background: white;border-radius: 15px;width:100%;}
 .tab_menu span{margin:5px;font-size: 20px;font-weight: 700;}
-.ggi_txt{border-bottom:5px solid #2c3b00;padding:5px;margin:auto;width:200px;background:#f8ecc9;}
+.ggi_txt{padding:5px;margin:auto;height:40px;width:200px; line-height:40px;background:#f8ecc9; position: absolute; left:12%; top:-30px; border-radius: 10px; box-shadow:0px 5px 0px #dacda8;}
 
 /*댓글박스*/
 #cont_cbox .container{width:1000px;margin:auto;}
@@ -80,6 +92,7 @@ html{height:100%;}
     background: rgba(255,255,255,.001);font-size: 12px;line-height:18px;vertical-align:top;resize:none;box-sizing:border-box;}
 .cbox_write_area .cbox_inbox .cbox_text_guide{display:inline;overflow:hidden;position: absolute;top:6px;right:25px;bottom:0;left:15px;z-index:10;border:none;font-size: 12px;line-height: 1.5;cursor: default;}
 */
+
 .cbox_write_inner .cbox_upload_btn_area{height:43px;padding-right:68px;border-top:1px solid #ededed;position:relative;}
 .cbox_write_inner .cbox_upload_btn_area .cbox_upload_btn{background: #2c3b00;border-color:#2c3b00;position: absolute;bottom:-1px;right:-1px;z-index:10;width:68px;height:45px;}
 .cbox_write_inner .cbox_upload_btn_area .cbox_upload_btn .cbox_txt_upload{font-size: 13px;font-weight: 700;line-height:45px;color:#fff;}

@@ -18,11 +18,11 @@
 /*헤더 메뉴*/
 .header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
 .header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
-.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Do Hyeon', sans-serif;}
 .header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
 .header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
 .header-menu hr{width:1000px; height:3px; background:#2c3b00; }
-
+li #application{color:rgb(101, 126, 104);}
 
 /*이름*/
 .name_wrap{text-align: center; width:1000px;height: 600px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
