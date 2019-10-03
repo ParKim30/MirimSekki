@@ -76,8 +76,9 @@ li #menu{color:rgb(101, 126, 104);}
 .cbox_profile_area{overflow:hidden;font-size: 12px;height:30px;padding-left:5px;width:1000px;}
 .cbox_profile_area .cbox_name{float:left;padding-right: 15px;margin:5px;}
 .cbox_profile_area .cbox_name .cbox_write_name{font-size: 18px;color:#000;font-weight: 700;white-space:nowrap;}
-.cbox_profile_area .star_rating{float:float;margin:5px;}
-.cbox_profile_area .star_rating .score_star{}
+.cbox_profile_area .star_rating{float:left;}
+.cbox_profile_area .star_rating .star_score{width: 80px;height: 15px;background:#777;background:url(../img/star_image.png) no-repeat;background-position: -0px -153px;margin-top:8px;}
+.star_score{}
 
 /*
 .cbox_write_wrap{position: relative;}
@@ -115,4 +116,8 @@ li #menu{color:rgb(101, 126, 104);}
 #footer{background:#f8ecc9;}
 #footer .address_wrap{margin:auto;position: relative;width:500px;border:1px solid #ccc;}
 #footer address div{position: absolute;top:50px;left:100px;}
+
+/*별점*/
+
+
 
