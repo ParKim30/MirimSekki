@@ -1,10 +1,11 @@
 <?php
     session_start();
     $host = "localhost";
-    $user = "root";
-    $pw = "mirim2";
-    $dbName = "mirimsekki";
-    $conn = new mysqli($host,$user,$pw,$dbName);
+    $user = "mirimmeals";
+    $pw = "parkim30!";
+    $dbName = "mirimmeals";
+    $conn = mysqli_connect($host,$user,$pw);
+    mysqli_select_db($conn,$dbName);
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,7 +35,12 @@
                         <table id="signup_table">
                             <tr>
                                 <td class="td_text"><label for="name">이름</label></td>
-                                <td colspan="3"><div id="name" class="input_text"><?echo $_SESSION['user_id'];?></div></td>
+                                <td colspan="3" class="input_text" id="name"><div id="name" class="input_text">
+                                <?
+                                    $user_id=$_SESSION['user_id'];
+                                    echo $user_id;
+                                ?>
+                                </div></td>
                             </tr>
                             <tr>
                                 <td class="td_text"><label for="uid">아이디</label></td>
@@ -87,7 +93,7 @@
                             </tr>
 
                         </table>
-                        <input type="submit" name="signup_check" class="signup_btn" value="회원가입">
+                        <input type="submit" name="signup_check" class="signup_btn" value="확인">
                     </form>
                 </div>
             </div>
