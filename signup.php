@@ -1,11 +1,17 @@
 <?php
-    $host = "3meals.emirim.kr";
+     $host = "localhost";
     $user = "mirimmeals";
-    $pw = "parkim30!";
+     $pw = "parkim30!";
     $dbName = "mirimmeals";
-    $conn = new mysqli($host,$user,$pw,$dbName);
-
-
+      $conn = mysqli_connect($host,$user,$pw);
+     mysqli_select_db($conn,$dbName);
+   
+    if($conn) 
+   echo "db연결성공";
+    else
+   echo "db연결 실패"; 
+// echo "testtest";
+    
     $uid = $_POST['uid'];
     $upw = $_POST['upw'];
     $uname = $_POST['name'];
@@ -14,30 +20,36 @@
     $num = $_POST['num'];
     $home = $_POST['home'];
     $allergy = $_POST['allergy'];
-
-    // for($i=0;$i < count($allergy);$i++) {
-    //     echo $allergy[$i] . "<br>";
-    //   }
-   
-
+    
+    // for($i=0; $i<count($allergy);$i++){
+    //     echo count($allergy);
+    //     echo $allergy[$i]."<br>";
+    // }
+    
+    
     if(count($allergy)==0){
-        $exist = false;
+        //echo "0 ";
+        $exist = 0;
     }else if(count($allergy)>0){
-        $exist = true;
-        $sql2 = "insert into member_allergy(id,allergy_1,allergy_2,allergy_3,allergy_4,allergy_5,allergy_6,allergy_7,allergy_8,allergy_9,allergy_10,allergy_12,allergy_13,allergy_14,allergy_15,allergy_16,allergy_17,allergy_18)";
+        $exist = 1;
+        //echo "1 ";
+        $allergy_implode=implode(",",$allergy);
+        //print_r ($allergy_explode);
+        $sql2 = "insert into member_allergy (id, allergy)";
+        $sql2 = $sql2. "values('{$uid}','{$allergy_implode}')";
+        //echo "insert 성공 ";
     }
-
     $sql = "insert into member (id, pw, name,grade, classroom, num, dor,allergy)";
     $sql = $sql. "values('{$uid}','{$upw}','{$uname}','{$grade}','{$classroom}','{$num}','{$home}','{$exist}')";
 
      //이제 알레르기여부 보고 있으면 프라이머리키 가져와서 넣어주고 알레르기여부도 넣어줘야 함
-    if($exist==true){
-        $sql2 = $sql2. "values('{$uid}','{$allergy}')";
-    }
+    //if($exist==1){
+        
+    //}
 
-    if($conn->query($sql)){
+    if($conn->query($sql)&&$conn->query($sql2)){
         echo("<script>alert('회원가입 되었습니다')</script>");
-        include('main.html');
+        include('index.html');
     }else{
         echo 'fail to insert sql'.mysqli_error($conn);
     }
