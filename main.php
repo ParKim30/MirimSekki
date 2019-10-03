@@ -26,7 +26,7 @@
                             <?php
                                 $user_id = $_SESSION['user_id'];
                                 echo "<a href='my_info.php'>$user_id</a>";
-                            ?>/ <a href="logout.php">로그아웃</a></span>  
+                            ?>/ <a href="logout.php">로그아웃</a></span>
                         </div>
                     </div>
             </div>

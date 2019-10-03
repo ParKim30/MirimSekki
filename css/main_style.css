@@ -14,12 +14,18 @@
 /* 급식판*/
 .pan{position: relative;}
 .pan .pan_back{width:1000px;height: 600px; background:#777;position: absolute;left:250px;top:10px; border-radius: 50px;box-shadow: 0.5px 0.5px 4px 1px rgb(189, 189, 189);}
-.pan .pan_bottom1{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:280px; top:30px;text-align: center; line-height: 250px;font-size:35pt;font-family: 'Gaegu', cursive;}
-.pan .pan_bottom2{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:600px; top:30px;text-align: center; line-height: 250px;font-size:37pt;font-family: 'Gaegu', cursive;}
-.pan .pan_bottom3{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:920px; top:30px;text-align: center; line-height: 250px;font-size:37pt;font-family: 'Gaegu', cursive;}
+.pan .pan_bottom1{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:280px; top:30px;text-align: center; line-height: 250px;font-size:35pt;}
+.pan .pan_bottom2{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:600px; top:30px;text-align: center; line-height: 250px;font-size:37pt;}
+.pan .pan_bottom3{width:300px; height:250px; background:#666;position:absolute;border-radius: 80px;left:920px; top:30px;text-align: center; line-height: 250px;font-size:37pt;}
 .pan .pan_bottom4{width:460px; height:280px; background:#666;position:absolute;border-radius: 80px;left:280px; top:300px;text-align: center;line-height: 280px;}
 .pan .pan_bottom5{width:460px; height:280px; background:#666;position:absolute;border-radius: 80px;left:760px; top:300px;text-align: center;line-height: 280px;}
 .pan a{color:white;}
 .pan_bottom4 img{width: 450px;height: 260px;padding-top:10px;}
 .pan_bottom5 img{width: 430px;height: 270px;padding-top:5px;}
 
+/*퀵메뉴*/
+.quick_menubar{width:130px; height:170px; background:#f8ecc9;  position: fixed; top:340px; right:30px;border-radius: 20px;box-shadow: 0.5px 0.5px 4px 1px #d6cdb0;}
+.quick_menubar ul{text-align: center;margin-top:30px;}
+.quick_menubar li{font-size:24px; color:#000;}
+.quick_menubar li img{width:40px;height:40px;}
+.quick_menubar .menubar_under{width:30px; height:400px; background:#888;margin-left:50px;border-radius: 10px;}
