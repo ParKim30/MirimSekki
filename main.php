@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/main_style.css">
         <link rel="stylesheet" href="css/reset.css">
 
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Gaegu|Poor+Story&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -26,7 +27,7 @@
                             <?php
                                 $user_id = $_SESSION['user_id'];
                                 echo "<a href='my_info.php'>$user_id</a>";
-                            ?>/ <a href="logout.php">로그아웃</a></span>
+                            ?>/<a href="logout.php">로그아웃</a></span>
                         </div>
                     </div>
             </div>
@@ -35,7 +36,7 @@
                     <div class="pan">
                         <div class="pan_back"></div>
                         <div class="pan_bottom1"><a href="#">급식 메뉴</a></div>
-                        <div class="pan_bottom2"><a href="#">급식 신청</a></div>
+                        <div class="pan_bottom2"><a href="application.php">급식 신청</a></div>
                         <div class="pan_bottom3"><a href="#">만족도 조사</a></div>
                         <div class="pan_bottom4"><img src="img/밥.png"></div>
                         <div class="pan_bottom5"><img src="img/국.png"></div>

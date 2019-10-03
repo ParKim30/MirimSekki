@@ -1,10 +1,10 @@
 <?php
-    $host = "3meals.emirim.kr";
+    $host = "localhost";
     $user = "mirimmeals";
     $pw = "parkim30!";
     $dbName = "mirimmeals";
     $conn = new mysqli($host,$user,$pw,$dbName);
-
+    mysql_query("set names utf8");
 
     $uid = $_POST['uid'];
     $upw = $_POST['upw'];
@@ -37,7 +37,7 @@
 
     if($conn->query($sql)){
         echo("<script>alert('회원가입 되었습니다')</script>");
-        include('main.html');
+        include('index.html');
     }else{
         echo 'fail to insert sql'.mysqli_error($conn);
     }

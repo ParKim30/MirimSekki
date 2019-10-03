@@ -3,10 +3,10 @@
  $uid = $_POST["uid"];
  $upw = $_POST["upw"];
 
-$host = "127.0.0.1";
-$user = "root";
-$pw = "mirim2";
-$dbName = "mirimsekki";
+ $host = "localhost";
+ $user = "mirimmeals";
+ $pw = "parkim30!";
+ $dbName = "mirimmeals";
 $conn = new mysqli($host,$user,$pw,$dbName);
 
 $sql = "SELECT * FROM member WHERE id = '{$uid}' AND pw= '{$upw}'";
