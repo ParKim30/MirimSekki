@@ -37,20 +37,56 @@
                 </div>
                 <div class="name_wrap">
                     <div class="name">
-                        <p>2204 박예진 - 기숙사</p>
+                        <p>
+                            <?php
+                                error_reporting(E_ALL);
+
+                                ini_set("display_errors", 1);
+                                
+                                session_start();
+                                $host = "localhost";
+                                $user = "mirimmeals";
+                                $pw = "parkim30!";
+                                $dbName = "mirimmeals";
+                                $conn = new mysqli($host,$user,$pw,$dbName);
+
+                                $user_id=$_SESSION['user_id'];
+                                $sql = "SELECT * FROM member WHERE id = '{$user_id}'";
+                                $res = $conn->query($sql);
+                                
+                                $row = $res->fetch_array(MYSQLI_ASSOC);
+                                $user_grade=$row['grade'];
+                                $user_class=$row['classroom'];
+                                $user_num=$row['num'];
+                                $user_name=$row['name'];
+                                
+                                
+                                if(strlen($user_num)==1){
+                                    $student_id=$user_grade.$user_class."0".$user_num;
+                                }
+                                else {$student_id=$user_grade.$user_class.$user_num;}
+                                $_SESSION['student_id']=$student_id;
+                                if($row['dor']=="myhome") $user_home="통학";
+                                else if($row['dor']=="dormitory") $user_home="기숙사";
+    
+                                echo $student_id." ".$user_name." - ".$user_home;
+
+                                
+                            ?>
+                        </p>
                     </div>
-                    <form method="post" action="#" name="checkbox_form" id="checkbox_form">
+                    <form method="post" action="application_db.php" name="checkbox_form" id="checkbox_form">
                         <div class="checkbox">
                             <span>
-                                <input type="checkbox" name="meal[]" value='hanggi' id="meal1">
+                                <input type='checkbox' name='meal[]' value='hanggi' id="meal1">
                                 <label for="meal1">조식</label>
                             </span>
                             <span>
-                                <input type="checkbox" name="meal[]" value='duggi' id="meal2">
+                                <input type='checkbox' name='meal[]' value='duggi' id="meal2">
                                 <label for="meal2">중식</label>
                             </span>
                             <span>
-                                <input type="checkbox" name="meal[]" value='seggi' id="meal3">
+                                <input type='checkbox' name='meal[]' value='seggi' id="meal3">
                                 <label for="meal3">석식</label>
                             </span>
                         </div>

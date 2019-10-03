@@ -18,7 +18,7 @@
 /*헤더 메뉴*/
 .header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
 .header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
-.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Gaegu', cursive;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Do Hyeon', sans-serif;}
 .header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
 .header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
 .header-menu hr{width:1000px; height:3px; background:#2c3b00; }
@@ -30,15 +30,15 @@
 .download_header span{ font-weight: bold; font-size: 18px;}
 
 /*다운로드 컨테이너*/
-.download .download_con{width:1000px; height: 400px;  margin-top:30px;}
+.download .download_con{width:1000px; height: 400px;  margin-top:30px;font-family: 'Do Hyeon', sans-serif;}
 .download_con .download_menu{position: relative;width:1000px; height:100px;}
 .download_menu .application_con{float:left;position: absolute; left:330px; top:20px; width:140px;}
 .download_menu .survey_con{position: absolute; left:510px; top:20px;width:140px; }
-.download_con .download_btn{display:block; margin:0 auto;width:500px; height:50px; background:#2c3b00;color:white; border:0; margin-bottom:10px; border-radius: 10px; font-weight: bold;} 
-.download_con .download_btn:hover{background:#151b00;}
+.download_con .download_btn{display:block; margin:0 auto;width:500px; height:50px; font-size:22px; background:#2c3b00;color:white; border:0; margin-bottom:10px; border-radius: 10px; font-weight: bold;} 
+.download_con .download_btn:hover{background:rgb(68, 85, 70);}
 .download_menu .con_title{font-weight: bold; font-size:18px;padding:10px; color:black;width:140px;}
 .title_con .con_line{width:140px;height:2px;border-top:1.5px solid black;position: absolute; top:20;margin-left: 8px;}
-.title_con:hover>.con_line{border-top:4px solid black;}
+.title_con:hover>.con_line{border-top:5px solid black;}
 
 /* .download_con .application_con{ float:left;width:200px; position: absolute;left:250px; top:20px; display:block;background:white;}
 .download_con .survey_con{float:left; width:200px; position: absolute; left:550px;top:20px;display:block;background:white;}
