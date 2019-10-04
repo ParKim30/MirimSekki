@@ -42,15 +42,40 @@
     $sql = "insert into member (id, pw, name,grade, classroom, num, dor,allergy)";
     $sql = $sql. "values('{$uid}','{$upw}','{$uname}','{$grade}','{$classroom}','{$num}','{$home}','{$exist}')";
 
-     //이제 알레르기여부 보고 있으면 프라이머리키 가져와서 넣어주고 알레르기여부도 넣어줘야 함
-    //if($exist==1){
-        
-    //}
 
-    if($conn->query($sql)&&$conn->query($sql2)){
-        echo("<script>alert('회원가입 되었습니다')</script>");
-        include('index.html');
-    }else{
-        echo 'fail to insert sql'.mysqli_error($conn);
-    }
+        switch($exist){
+            case 0: if($conn->query($sql)){
+                        echo("<script>alert('회원가입 되었습니다')</script>");
+                        include('index.html');
+                    }else{
+                        echo 'fail to insert sql'.mysqli_error($conn);
+                    }
+
+            case 1: if($conn->query($sql)&&$conn->query($sql2)){
+                         echo("<script>alert('회원가입 되었습니다')</script>");
+                         include('index.html');
+                     }else{
+                        echo 'fail to insert sql'.mysqli_error($conn);
+                    }
+        }
+        // if($exist==1){
+        //     if($conn->query($sql)&&$conn->query($sql2)){
+        //         echo("<script>alert('회원가입 되었습니다')</script>");
+        //         include('index.html');
+        //     }
+        //     else{
+        //         echo 'fail to insert sql'.mysqli_error($conn);
+        //     }
+        // }
+        // else if($exist==0){
+        //     if($conn->query($sql){
+        //         echo("<script>alert('회원가입 되었습니다')</script>");
+        //         include('index.html');
+        //     }
+        //     else{
+        //         echo 'fail to insert sql'.mysqli_error($conn);
+        //     }
+        // }
+        
+   
 ?>
