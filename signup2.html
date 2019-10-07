@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="css/signup_style2.css">
         <link rel="stylesheet" href="css/reset.css">
         <meta charset="UTF-8">
-        <script src="js/signup.js"></script>
-
+        <script type="text/javascript" src="js/signup.js"></script>
         <!--웹폰트
         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">-->
     </head>
@@ -25,8 +24,7 @@
                         <h1>회원가입</h1>
                         <hr>
                     </div>
-                    <form method="post" action="signup.php" name="signup_form" id="signup_form" >
-                            <!-- onsubmit="return checkAll()" -->
+                    <form method="post" action="signup.php" name="signup_form" id="signup_form" onsubmit="return checkAll()">
                         <table id="signup_table">
                             <tr>
                                 <td class="td_text"><label for="name">이름</label></td>

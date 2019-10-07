@@ -32,13 +32,26 @@
 /*다운로드 컨테이너*/
 .download .download_con{width:1000px; height: 400px;  margin-top:30px;font-family: 'Do Hyeon', sans-serif;}
 .download_con .download_menu{position: relative;width:1000px; height:100px;}
+.download_menu ul{width:1000px; height:100%;}
+.download_menu li{width:1000px;height: 70px;}
+li .con_title{display:inline; font-size: 22px; margin-right:30px;}
+li .download_btn{width:500px; height:60px; font-size:24px; background:#2c3b00;color:white; border:0; border-radius: 10px; font-weight: bold;}
+li .download_btn:hover{background:rgb(68, 85, 70);}
+
+
+/* .download .download_con{width:1000px; height: 400px;  margin-top:30px;font-family: 'Do Hyeon', sans-serif;}
+.download_con .download_menu{position: relative;width:1000px; height:100px;}
 .download_menu .application_con{float:left;position: absolute; left:330px; top:20px; width:140px;}
 .download_menu .survey_con{position: absolute; left:510px; top:20px;width:140px; }
 .download_con .download_btn{display:block; margin:0 auto;width:500px; height:50px; font-size:22px; background:#2c3b00;color:white; border:0; margin-bottom:10px; border-radius: 10px; font-weight: bold;} 
 .download_con .download_btn:hover{background:rgb(68, 85, 70);}
-.download_menu .con_title{font-weight: bold; font-size:18px;padding:10px; color:black;width:140px;}
-.title_con .con_line{width:140px;height:2px;border-top:1.5px solid black;position: absolute; top:20;margin-left: 8px;}
-.title_con:hover>.con_line{border-top:5px solid black;}
+.download_menu .con_title_1,.con_title_2{font-weight: bold; font-size:18px;padding:10px; color:black;width:140px;}
+.base{width:140px;height:2px;border-top:1.5px solid black;position: absolute; top:20;margin-left: 8px;}
+.title_con_1:hover>#con_line_1,.title_con_2:hover>#con_line_2{border-top:5px solid black;}
+
+
+
+.selected{border-top:5px solid rgb(101, 126, 104);}  */
 
 /* .download_con .application_con{ float:left;width:200px; position: absolute;left:250px; top:20px; display:block;background:white;}
 .download_con .survey_con{float:left; width:200px; position: absolute; left:550px;top:20px;display:block;background:white;}
