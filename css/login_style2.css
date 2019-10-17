@@ -3,8 +3,8 @@
 #footer{height:100px;background:#f8ecc9;}
 
 /*헤더*/
-#header{height:250px;background:#f8ecc9;position: relative;}
-#header img{width:300px;height:200px;position: absolute;left:600px;top:50px;}
+#header{height:250px;background:#f8ecc9; text-align: center;}
+#header img{width:300px;height:200px;margin-top:50px;}
 
 /*로그인 헤더*/
 .login_header{text-align: center; padding-top:40px;}
