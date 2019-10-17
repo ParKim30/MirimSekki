@@ -9,7 +9,7 @@
 
         <!--CSS Style-->
         <link rel ="stylesheet" href="css/reset.css">
-        <link rel ="stylesheet" href="css/application.css">
+        <link rel ="stylesheet" href="css/application?ver=1.css">
 
         <!--웹 폰트-->
         <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
                     <img src="img/LunchRoom.PNG">
                 </div>
                 <div class="header-logo">
-                    <a href="index.html"><img src="img/logo.png"></a>
+                    <a href="main.php"><img src="img/logo.png"></a>
                 </div> 
             </div>
             <div id="contents">
@@ -30,7 +30,7 @@
                     <hr>
                     <ul>
                         <li><a href="menu.html">급식메뉴</a></li>
-                        <li><a href="application.html" id="application">급식신청</a></li>
+                        <li><a href="application.php" id="application">급식신청</a></li>
                         <li><a href="survey.html">만족도조사</a></li>
                     </ul>
                     <hr>

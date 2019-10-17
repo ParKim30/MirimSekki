@@ -16,6 +16,7 @@ $row = $res->fetch_array(MYSQLI_ASSOC);
 
 if ($row != null) {
     $_SESSION['user_id'] = $row['id'];
+    $_SESSION['login'] = true;
     echo("<script>alert('로그인 되었습니다')</script>");
     include ('main.php');
 }

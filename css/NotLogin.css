@@ -1,0 +1,33 @@
+/*레이아웃*/
+#wrap{background: #f8ecc9;}
+#header{height:250px;background: #f8ecc9;}
+#contents{background: #f8ecc9;position: relative; height:1000px;}
+#footer{width:100%;height:120px;background: #f8ecc9;}
+
+/*미림세끼 로고*/
+.header-logo{text-align: left;padding-top:20px; padding-left:50px;float:left;}
+.header-logo a{ background:url("../image/logo.png"); display:inline;}
+.header-logo img{width:200px; height:120px;}
+
+/*백그라운드*/
+#header{position: relative;}
+
+.header-logo{width:100%; height:200px; position:absolute; top:56px; text-align: center; padding:0; margin:0;}
+.header-logo img{width:300px;height:200px; position:absolute;z-index: 2; margin-left:-150px;}
+/* 
+.header-logo img{width:300px;height:200px;left:600px;top:56px;position: absolute; z-index: 2;} */
+.header-img img{position:relative; width:100%;height:400px; z-index: 1; opacity: 0.2;}
+
+
+/*헤더 메뉴*/
+.header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
+.header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}
+.header-menu ul li{list-style-type:none;display:inline;margin-left:50px; font-family: 'Do Hyeon', sans-serif;}
+.header-menu ul a{display:inline-block;color:#2c3b00;font-size: 22pt;text-decoration: none; font-weight: bold;}
+.header-menu ul a:hover{color:#2c3b00;font-size: 22pt;text-decoration:none;font-weight: bold;}
+.header-menu hr{width:1000px; height:3px; background:#2c3b00; }
+
+
+.container{text-align: center; width:1000px;height: 600px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
+.container h1{ margin-top:100px; font-size:32px; margin-bottom: 20px;}
+.container .login_btn{width:200px; height:50px; color:white; font-size:22px; background:#2c3b00; border:0; border-radius:8px;}
