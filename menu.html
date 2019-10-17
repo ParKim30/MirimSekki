@@ -9,7 +9,7 @@
 
         <!--CSS Style-->
         <link rel ="stylesheet" href="css/reset.css">
-        <link rel ="stylesheet" href="css/menu.css">
+        <link rel ="stylesheet" href="css/menu?ver=1.css">
 
         <!--웹 폰트-->
         <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
@@ -17,6 +17,41 @@
 
     </head>
     <body>
+        <script type="text/javascript">
+            var nowDate = new Date();
+            var yesterDate;
+            var tomorrow;
+            var currentDate=nowDate;
+            window.onload =function(){
+            document.getElementById("today_date").innerHTML=nowDate.getFullYear() + "." + (nowDate.getMonth()+1) +"."+nowDate.getDate();
+            }
+            function pre_date(){
+                yesterDate = new Date(Date.parse(currentDate)-1*24*60*60*1000);
+                
+                var yesterYear = yesterDate.getFullYear();
+                var yesterMonth = yesterDate.getMonth()+1;
+                var yesterDay = yesterDate.getDate();
+
+                if(yesterMonth<10){yesterMonth = "0" + yesterMonth;}
+                if(yesterDay<10){yesterDay = "0"+yesterDay};
+                currentDate.setDate(yesterDate.getDate());
+               
+                document.getElementById("today_date").innerHTML=currentDate.getFullYear() + "." + (currentDate.getMonth()+1) +"."+currentDate.getDate();
+            } 
+            function next_date(){
+                tomorrow = new Date(Date.parse(currentDate)+1*24*60*60*1000);
+                
+                var tomorrowYear = tomorrow.getFullYear();
+                var tomorrowMonth = tomorrow.getMonth()+1;
+                var tomorrowDay = tomorrow.getDate();
+
+                if(tomorrowMonth<10){tomorrowMonth = "0" + tomorrowMonth;}
+                if(tomorrowDay<10){tomorrowDay = "0"+tomorrowDay};
+                currentDate.setDate(tomorrow.getDate());
+               
+                document.getElementById("today_date").innerHTML=currentDate.getFullYear() + "." + (currentDate.getMonth()+1) +"."+currentDate.getDate();
+            }
+        </script>
         <div id = "wrap">
             <div id="header">
                 <div class="header-img">
@@ -41,32 +76,9 @@
                         <div class="container">
                             <h2 class="ir_pm">날짜</h2>
                             <div class="date">
-                                <a href="#"class="left_tri"><img src="img/left_tri.png" class="left_tri" onclick="pre_menu()"></a>
-                                <span class="today_date">
-                                    <script type="text/javascript">
-                                        var nowDate = new Date();
-                                        var yesterDate;
-                                        var currentDate = nowDate.getFullYear() + "." + (nowDate.getMonth()+1) +"."+nowDate.getDate();
-                                        
-                                        function pre_menu(){
-                                            yesterDate = new Date(Date.parse(nowDate)-1*24*60*60*1000);
-
-                                            var yesterYear = yesterDate.getFullYear();
-                                            var yesterMonth = yesterDate.getMonth()+1;
-                                            var yesterDay = yesterDate.getDate();
-
-                                            if(yesterMonth<10){yesterMonth = "0" + yesterMonth;}
-                                            if(yesterDay<10){yesterDay = "0"+yesterDay};
-
-                                            currentDate = yesterYear+"."+yesterMonth+"."+yesterDay;
-                                            document.write(currentDate);
-                                        } 
-                                        
-                                        document.write(currentDate);
-                                    </script>
-                                    
-                                </span>
-                                <a href="#" class="right_tri"><img src="img/right_tri.png" class="right_tri"></a>
+                                <a href="#"class="left_tri"><img src="img/left_tri.png" class="left_tri" onclick="pre_date()"></a>
+                                <span id="today_date"></span>
+                                <a href="#" class="right_tri"><img src="img/right_tri.png" class="right_tri" onclick="next_date()"></a>
                                 <!-- <img src ="img/calendar.png" class="calendar_img"><span class="ir_pm">달력</span> -->
                             </div>
                         </div>

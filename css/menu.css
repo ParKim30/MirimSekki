@@ -48,7 +48,7 @@ li #menu{color:rgb(101, 126, 104);}
 /*날짜*/
 .date {text-align: center;margin:30px; margin-top:40px;}
 .date img{width: 30px;height: 30px;}
-.date .today_date{font-size: 30px;}
+.date #today_date{font-size: 30px;}
 .date .left_tri{margin-right:10px;}
 .date .right_tri{margin-left:10px;}
 .date .calendar_img{margin-left:10px;}
