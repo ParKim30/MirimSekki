@@ -9,13 +9,9 @@
     $user_id=$_SESSION['user_id'];
     $student_id=$_SESSION['student_id'];
     
-    $wantFood=$_POST['want_Food'];
-    $NwantFood=$_POST['Nwant_Food'];
-    
-    
 
-    $sql = "insert into survey (student_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,wantFood,NwantFood)";
-    $sql = $sql. "values('{$student_id}','{$_POST['Q1']}','{$_POST['Q2']}','{$_POST['Q3']}','{$_POST['Q4']}','{$_POST['Q5']}','{$_POST['Q6']}','{$_POST['Q7']}','{$_POST['Q8']}','{$wantFood}','{$NwantFood}')";
+    $sql = "insert into survey (student_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8)";
+    $sql = $sql. "values('{$student_id}','{$_POST['Q1']}','{$_POST['Q2']}','{$_POST['Q3']}','{$_POST['Q4']}','{$_POST['Q5']}','{$_POST['Q6']}','{$_POST['Q7']}','{$_POST['Q8']}')";
 
     if($conn->query($sql)){
         echo("<script>alert('만족도조사 제출되었습니다.')</script>");
