@@ -8,6 +8,7 @@
 
     $user_id=$_SESSION['user_id'];
     $student_id=$_SESSION['student_id'];
+    $user_home=$_SESSION['student_home'];
     $meal1=0;$meal2=0;$meal3=0;
 
     if(in_array('hanggi', $_POST['meal'])){
@@ -19,8 +20,8 @@
         $meal3=1;
     }
 
-    $sql = "insert into application (id, student_id, meal1,meal2,meal3)";
-    $sql = $sql. "values('{$user_id}','{$student_id}','{$meal1}','{$meal2}','{$meal3}')";
+    $sql = "insert into application (id, student_id, meal1,meal2,meal3,dor)";
+    $sql = $sql. "values('{$user_id}','{$student_id}','{$meal1}','{$meal2}','{$meal3}','{$user_home}')";
 
     if($conn->query($sql)){
         echo("<script>alert('급식 신청되었습니다.')</script>");
