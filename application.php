@@ -68,6 +68,7 @@
                                 $_SESSION['student_id']=$student_id;
                                 if($row['dor']=="myhome") $user_home="통학";
                                 else if($row['dor']=="dormitory") $user_home="기숙사";
+                                $_SESSION['student_home']=$user_home;
     
                                 echo $student_id." ".$user_name." - ".$user_home;
 
