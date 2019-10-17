@@ -41,8 +41,31 @@
                         <div class="container">
                             <h2 class="ir_pm">날짜</h2>
                             <div class="date">
-                                <a href="#"class="left_tri"><img src="img/left_tri.png" class="left_tri"></a>
-                                <span class="today_date">2018.09.02</span>
+                                <a href="#"class="left_tri"><img src="img/left_tri.png" class="left_tri" onclick="pre_menu()"></a>
+                                <span class="today_date">
+                                    <script type="text/javascript">
+                                        var nowDate = new Date();
+                                        var yesterDate;
+                                        var currentDate = nowDate.getFullYear() + "." + (nowDate.getMonth()+1) +"."+nowDate.getDate();
+                                        
+                                        function pre_menu(){
+                                            yesterDate = new Date(Date.parse(nowDate)-1*24*60*60*1000);
+
+                                            var yesterYear = yesterDate.getFullYear();
+                                            var yesterMonth = yesterDate.getMonth()+1;
+                                            var yesterDay = yesterDate.getDate();
+
+                                            if(yesterMonth<10){yesterMonth = "0" + yesterMonth;}
+                                            if(yesterDay<10){yesterDay = "0"+yesterDay};
+
+                                            currentDate = yesterYear+"."+yesterMonth+"."+yesterDay;
+                                            document.write(currentDate);
+                                        } 
+                                        
+                                        document.write(currentDate);
+                                    </script>
+                                    
+                                </span>
                                 <a href="#" class="right_tri"><img src="img/right_tri.png" class="right_tri"></a>
                                 <!-- <img src ="img/calendar.png" class="calendar_img"><span class="ir_pm">달력</span> -->
                             </div>
@@ -214,11 +237,7 @@
             </div>
         </div>
         <script>
-        $('.star_score a').click(function(){
-            $(this).parent().children("a").removeClass("star");  /* 별점의 on 클래스 전부 제거 */ 
-            $(this).addClass("star").prevAll("a").addClass("star"); /* 클릭한 별과, 그 앞 까지 별점에 on 클래스 추가 */
-            return false;
-        });
-     </script>
+        
+</script>
     </body>
 </html>
