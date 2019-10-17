@@ -14,8 +14,7 @@ function checkAll() {
         return false;
     } else if(!checkHome()){
         return false;
-    } 
-    
+    }
     return true;
 }
 

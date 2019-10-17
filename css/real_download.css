@@ -1,0 +1,4 @@
+.table_responsive{text-align: center;}
+.table_responsive h2{}
+.table_responsive #live_data{}
+#live_data .btn{width:150px; height:50px; color:white; background:#2c3b00; font-size:20px;border:0; border-radius: 10px;}
