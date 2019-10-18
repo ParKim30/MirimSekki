@@ -20,11 +20,8 @@
         $meal3=1;
     }
 
-<<<<<<< HEAD
     $sql = "insert into application (id, student_id, meal1,meal2,meal3,dor )";
-=======
-    $sql = "insert into application (id, student_id, meal1,meal2,meal3,dor)";
->>>>>>> 27e922810cb0e6ec39dc464e0461a65f5ac4913f
+
     $sql = $sql. "values('{$user_id}','{$student_id}','{$meal1}','{$meal2}','{$meal3}','{$user_home}')";
 
     if($conn->query($sql)){

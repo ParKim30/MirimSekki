@@ -29,7 +29,7 @@
                 <div class="header-menu">
                     <hr>
                     <ul>
-                        <li><a href="menu.html">급식메뉴</a></li>
+                        <li><a href="menu.php">급식메뉴</a></li>
                         <li><a href="application.php" id="application">급식신청</a></li>
                         <li><a href="survey.html">만족도조사</a></li>
                     </ul>

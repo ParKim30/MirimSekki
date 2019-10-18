@@ -33,7 +33,7 @@ html{height:100%;}
 li #menu{color:rgb(101, 126, 104);}
 
 
-.con_con{text-align: center; width:1000px;height: 1400px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
+.con_con{text-align: center; width:1000px;height: 700px;background:whitesmoke;z-index:3;border-radius: 30px; position: absolute; top:120px;left:50%; margin-left:-500px;}
 /*
 .header-menu{background: whitesmoke; height:100px; width:1000px;z-index: 2; position: absolute; left:50%; margin-left:-500px;}
 .header-menu ul{float:left;text-align: center;margin-top:13px;margin-left:260px; margin-bottom: 15px;}

@@ -29,7 +29,15 @@
                     <hr>
                     <ul>
                         <li><a href="menu.php">급식메뉴</a></li>
-                        <li><a href="application.php">급식신청</a></li>
+                        <?php  
+                            session_start();
+                            if(isset($_SESSION['user_id'])){
+                                echo "<li><a href='application.php' id='application'>급식신청</a></li>";
+                            }
+                            else echo "<li><a href='NotLogin.html' id='application'>급식신청</a></li>";
+                            
+                        ?>
+                        
                         <li><a href="survey.html">만족도조사</a></li>
                     </ul>
                     <hr>

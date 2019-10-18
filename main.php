@@ -26,8 +26,10 @@
                         <div class="menu">
                             <?php
                                 session_start();
-                                $user_id = $_SESSION['user_id'];
-                                echo "<a href='my_info.php'>$user_id</a>";
+                                if(isset($_SESSION['user_id'])){
+                                    $user_id = $_SESSION['user_id'];
+                                    echo "<a href='my_info.php'>$user_id</a>";
+                                }else echo "<a href='login2.html'>로그인</a>";
                             ?>/<a href="logout.php">로그아웃</a></span>
                         </div>
                     </div>
@@ -36,11 +38,33 @@
                     
                     <div class="pan">
                         <div class="pan_back"></div>
-                        <div class="pan_bottom1"><a href="#">급식 메뉴</a></div>
-                        <div class="pan_bottom2"><a href="application.php">급식 신청</a></div>
-                        <div class="pan_bottom3"><a href="survey.html">만족도 조사</a></div>
+                        <div class="pan_bottom1"><a href="menu.php">급식 메뉴</a></div>
+                        <div class="pan_bottom2">
+                        <?php  
+                            session_start();
+                            if(isset($_SESSION['user_id'])){
+                                echo "<a href='application.php'>급식 신청</a></div>";
+                            }
+                            else echo "<a href='NotLogin.html'>급식 신청</a></div>";
+                        ?>
+                        <div class="pan_bottom3">
+                        <?php
+                            if(isset($_SESSION['user_id'])){
+                                echo "<a href='survey.html'>만족도 조사</a>";
+                            }
+                            else echo "<a href='NotLogin.html'>만족도 조사</a>";
+                        ?>    
+                        </div>
                         <div class="pan_bottom4"><img src="img/밥.png"></div>
                         <div class="pan_bottom5"><img src="img/국.png"></div>
+                        <div class="quick_menubar">
+                            <ul>
+                                <li>EXEL</li>
+                                <li>다운로드</li>
+                                <li><a href="down_Excel.php"><img src="img/download_arrow.png"></a></li>
+                            </ul>
+                            <!-- <div class="menubar_under"> </div> -->
+                        </div>
                     </div>  
             </div>
             <div id="footer">
